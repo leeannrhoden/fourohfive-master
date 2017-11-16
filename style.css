@@ -17,6 +17,11 @@ Tags: custom-menu, featured-images
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in
  *    IE on Windows Phone and in iOS.
+
+
+
+
+ TESSSSSTTTTTT
  */
 html {
   line-height: 1.15;
@@ -444,6 +449,10 @@ template {
   display: none;
 }
 
+html {
+  font-family: "Poppins", sans-serif;
+}
+
 .img-fluid {
   height: auto;
   max-width: 100%;
@@ -529,7 +538,20 @@ template {
   position: absolute;
   top: 132px;
   left: 60px;
-  color: #000;
+  color: white;
+}
+
+.content {
+  font-weight: 400;
+}
+
+.gradient {
+  background-color: red !important;
+}
+
+.py {
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 html {
