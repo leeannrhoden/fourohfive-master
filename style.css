@@ -525,19 +525,33 @@ html {
     margin-right: 8px;
   }
 }
+.custom-logo-link {
+  max-width: 100px;
+}
+
 .image_wrapper {
   position: relative;
 }
 
 .image_description {
-  position: absolute;
-  top: 132px;
-  left: 60px;
+  top: 150px;
+  left: 540px;
   color: white;
+  opacity: 0.75;
+  position: absolute;
 }
 
 .spacer {
-  max-width: 1400px;
+  background-color: #D24E57;
+  margin: 0 auto;
+}
+
+.spacer-image {
+  max-width: 350px;
+}
+
+.spacer-two {
+  margin: auto;
 }
 
 .title {
@@ -550,6 +564,7 @@ html {
   font-weight: 400;
   color: #95989A;
   padding-bottom: 50px;
+  text-align: center;
 }
 
 @media screen and (min-width: 640px) {
@@ -562,6 +577,7 @@ html {
   margin: 0 auto;
   padding: 24px;
   max-width: 1500px;
+  align: center;
 }
 
 .gradient {
@@ -609,11 +625,54 @@ html {
   .grid-three {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 2fr;
-        grid-template-columns: 1fr 2fr;
-    grid-gap: 44px;
+    float: left;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
   }
 }
+.flex {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.person_name {
+  text-align: center;
+  margin: 0 auto;
+  color: #D24E57;
+}
+
+.person_title {
+  text-align: center;
+  margin: 0 auto;
+  color: #95989A;
+}
+
+.person_description {
+  margin: 0 auto;
+  color: #95989A;
+}
+
+.words {
+  margin: 0 auto;
+}
+
+.form {
+  background-color: #D24E57;
+  color: white;
+  margin: 0 auto;
+}
+
+.form-content {
+  margin: 0 auto;
+}
+
+.gform_body {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
 .py {
   padding-top: 16px;
   padding-bottom: 16px;

@@ -6,20 +6,13 @@
 	<?php
 	the_post_thumbnail('full', ['class' => 'img-fluid']);
 	?>
-	<h2 class="image_description">
-		<?php the_field('banner_text') ?>
-	</h2>
-
+	<div class="image_description">
+		<img src="	<?php the_field('spacer'); ?>" alt="" class="spacer-image" >
+	</div>
 </div>
 
 
 <!-- Displaying Spacer -->
-<div>
-
-	<img src="	<?php the_field('spacer'); ?>" alt="">
-
-</div>
-
 
 <!-- Dsiplaying About -->
 <div>
@@ -100,47 +93,57 @@
 </div>
 
 
+
+<!-- SAMPLE CODE -->
+
+
+<!-- END SAMPLE CODE -->
+
+
  <!-- Displaying Team Members -->
-<!-- Container -->
-<div class="grid-three">
-<!-- Grid  -->
-<div class="grid-three">
-	<!-- Billy Joel -->
-		<div>
-			 <img src="<?php the_field('step_three_image') ?>" alt="">
-			 <img src="" alt="">
-			<h2>
-				
-			</h2>
-			<p>
-				
-			</p>
+	<!-- Container -->
+	<div class="container">
+	<!-- Grid  -->
+		<div class="grid-three">
+					<?php
+						// check if the repeater field has rows of data
+						if( have_rows('team_members') ):
+						 	// loop through the rows of data
+						    while ( have_rows('team_members') ) : the_row();
+					?> 
+					 <div class="deets text-center "> 
+							<img class= "person img-fluid" src="<?php the_sub_field ('photo');?>" alt="">
+		                        <div class="words">
+									<h3 class= "person_name">
+		                                <?php the_sub_field ('name') ?>
+		                            </h3>
+		                            <h4 class= "person_title">
+		                                <?php the_sub_field ('title') ?>
+		                            </h4>
+		                     
+		                        </div>
+		                </div>
+
+		            <?php endwhile; ?>
+
+		            <?php else : ?>
+
+		            
+
+		        <?php endif; ?>
+
+		<!-- End of Grid -->
 		</div>
 
-	<!-- Sam Smith -->
-		<div>
-			 <img src="" alt="">
-			 <img src="" alt="">
-			<h2>
-				
-			</h2>
-			<p>
-				
-			</p>
-		</div>
+	<!-- End of container -->
+	</div>
 
-	<!-- Taylor Swift -->
 
-		<div>
-			 <img src="" alt="">
-			 <img src="" alt="">
-			<h2>
-				
-			</h2>
-			<p>
-				
-			</p>
-		</div>
+
+
+
+
+
 
 </div>
 <!-- End of Grid -->
@@ -164,23 +167,11 @@
 
  <!-- Displaying Content Form -->
 		
-<div>
-		<div>
-		<?php the_title( '<h1>', '</h1>' ); ?>
-		</div>
-
-		<div>
+<div class="form">
+		<div class="form-content">
 		<?php the_content(); ?>
 		</div>
 </div>
-
-
-
-
-<!-- Footer -->
-
-
-
 
 
 

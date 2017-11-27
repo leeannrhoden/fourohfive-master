@@ -21,15 +21,17 @@
 
 <body class="sticky-footer">
 
-	<a class="sr-only" href="#content"><?php echo 'Skip to content'; ?></a>
+	<a class="sr-only" href="#content"></a>
 
 	<header id="masthead">
 
-		<?php
+		
 
-		/* This theme supports custom logos — see functions.php — so we load the logo here. */
-		the_custom_logo();
-
+	<!-- 	/* This theme supports custom logos — see functions.php — so we load the logo here. */ -->
+		<div class="logo">
+		<?php the_custom_logo(); ?>
+		</div>
+<?php
 		/**
 		 * Check if we're on the homepage.
 		 *

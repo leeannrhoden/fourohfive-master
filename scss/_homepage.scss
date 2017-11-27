@@ -1,23 +1,40 @@
 // Styles for Homepage
 
+.custom-logo-link
+{
+	max-width:100px;
+}
+
 
 .image_wrapper{
 	position: relative; 
 
 }
 
-.image_description{
-	position: absolute; 
-		top:132px;
-		left: 60px;
+ .image_description{
+	top:150px;
+		left: 540px;
 		color: white; 
-	
+		opacity: 0.75;
+		position: absolute; 
+
 }
+
+
 
 .spacer{
-	max-width: 1400px;
+	background-color:#D24E57;
+	margin: 0 auto;
 }
 
+.spacer-image {
+	max-width: 350px;
+		// padding-left: 500px;
+}
+
+.spacer-two{
+	margin: auto;
+}
 
 // Start Displaying About, Team Blurb, and Download
 
@@ -34,8 +51,8 @@
 .content{
 	font-weight:400;
 	color: #95989A;
-	padding-bottom: 50px
-	// text-align: center;
+	padding-bottom: 50px;
+	text-align: center;
 	 
 }
 
@@ -55,6 +72,7 @@
   margin: 0 auto;
   padding: 24px;
   max-width: 1500px;
+  align:center;
 }
 
 .gradient{
@@ -104,10 +122,56 @@ color: #95989A;
 @media screen and (min-width: 640px) {
   .grid-three{
     display: grid;
-      grid-template-columns: 1fr 2fr;
-      grid-gap: 44px;
-
+    float: left; 
+      grid-template-columns: 1fr 1fr 1fr;
+      // grid-gap: 14px;
   }
 }
+
+.flex {
+
+	display: flex;
+		align-items: center;
+}
+.person_name{
+	text-align:center;
+	margin: 0 auto;
+	color: #D24E57;
+}
+
+.person_title{
+	text-align:center;
+	margin:0 auto;
+	color: #95989A;
+}
+
+.person_description{
+	margin:0 auto;
+	color: #95989A;
+}
+
+.words{
+	margin: 0 auto;
+}
+
+// Form
+
+.form{
+	background-color: #D24E57;
+	color: white; 
+	margin: 0 auto;
+}
+
+.form-content{
+	 margin: 0 auto;
+}
+
+.gform_body{
+	padding-top: $spacer-2x-y;
+	padding-bottom: $spacer-2x-x;
+}
+
+
+
 
 
