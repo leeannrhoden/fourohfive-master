@@ -17,11 +17,6 @@ Tags: custom-menu, featured-images
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in
  *    IE on Windows Phone and in iOS.
-
-
-
-
- TESSSSSTTTTTT
  */
 html {
   line-height: 1.15;
@@ -541,14 +536,84 @@ html {
   color: white;
 }
 
+.spacer {
+  max-width: 1400px;
+}
+
+.title {
+  color: #95989A;
+  text-align: center;
+  padding-top: 25px;
+}
+
 .content {
   font-weight: 400;
+  color: #95989A;
+  padding-bottom: 50px;
+}
+
+@media screen and (min-width: 640px) {
+  .content {
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+}
+.container {
+  margin: 0 auto;
+  padding: 24px;
+  max-width: 1500px;
 }
 
 .gradient {
-  background-color: red !important;
+  background-color: #D24E57;
+  background-image: url("gradient.png") !important;
+  color: white;
 }
 
+@media screen and (min-width: 640px) {
+  .grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 2fr;
+        grid-template-columns: 1fr 2fr;
+    grid-gap: 44px;
+  }
+}
+@media screen and (min-width: 640px) {
+  .grid-two {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 2fr 1fr;
+        grid-template-columns: 2fr 1fr;
+    grid-gap: 44px;
+    padding-left: 50px;
+  }
+}
+.align-items-center {
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.align-self-center {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.text-right {
+  text-align: right;
+  color: #95989A;
+}
+
+@media screen and (min-width: 640px) {
+  .grid-three {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 2fr;
+        grid-template-columns: 1fr 2fr;
+    grid-gap: 44px;
+  }
+}
 .py {
   padding-top: 16px;
   padding-bottom: 16px;
@@ -563,7 +628,6 @@ html {
 }
 
 .container {
-  max-width: 960px;
   margin: 0 auto;
-  padding: 0 12px;
+  padding: 0;
 }

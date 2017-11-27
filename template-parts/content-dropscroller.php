@@ -22,49 +22,69 @@
 
 
 <!-- Dsiplaying About -->
-
-<div >
+<div>
 	
-	<h2 class="title">
-		<?php the_field('about_title') ?>
-	</h2>
+		
+		<h2 class="title">
+			<?php the_field('about_title') ?>
+		</h2>
 
-	<p class="content">
-		<?php the_field('purchase_drop') ?>
-	</p>
+		<p class="content">
+			<?php the_field('about') ?>
+		</p>
+
 </div>
 
 <!-- Displaying Step One -->
-<div class="gradient">
-	<h2>
-		<?php the_field('step_one_title') ?>
-	</h2>
-	<p>
-		<?php the_field('step_one') ?>
-	</p>
-	<img src="<?php the_field('step_one_image') ?>" alt="">
+<div class=" container gradient">
+	<div class="grid">
+		
+		<img src="<?php the_field('step_one_image') ?>" alt="">
+		<div class="align-self-center">
+			<h2>
+				<?php the_field('step_one_title') ?>
+			</h2>
+			<p>
+				<?php the_field('step_one') ?>
+			</p>
+		</div>
+	</div>
 </div>
 
  <!-- Displaying Step Two -->
-<div class=>
-		<h2>
-			<?php the_field('step_two_title') ?>
-		</h2>
-		<p>
-			<?php the_field('step_two') ?>
-		</p>
-		<img src="<?php the_field('step_two_image') ?>" alt="">
+<div class="container">
+	<div class="grid-two">
+		<div class="align-self-center text-right">		
+			<h2>
+				<?php the_field('step_two_title') ?>
+			</h2>
+			<p>
+				<?php the_field('step_two') ?>
+			</p>
+		</div>
+
+		<div class="align-item-right">
+			<img src="<?php the_field('step_two_image') ?>" alt="">
+		</div>
+	</div>
 </div>
 
  <!-- Displaying Step Three -->
-<div class="gradient">
-		<h2>
-			<?php the_field('step_three_title') ?>
-		</h2>
-		<p>
-			<?php the_field('step_three') ?>
-		</p>
+<div class="container gradient">
+	<div class="grid">
+
 		<img src="<?php the_field('step_three_image') ?>" alt="">
+
+		<div class="align-self-center">
+			<h2>
+				<?php the_field('step_three_title') ?>
+			</h2>
+			<p>
+				<?php the_field('step_three') ?>
+			</p>
+		</div>
+
+	</div>
 </div>
 
  <!-- Displaying Our Team Blurb -->
@@ -81,6 +101,51 @@
 
 
  <!-- Displaying Team Members -->
+<!-- Container -->
+<div class="grid-three">
+<!-- Grid  -->
+<div class="grid-three">
+	<!-- Billy Joel -->
+		<div>
+			 <img src="<?php the_field('step_three_image') ?>" alt="">
+			 <img src="" alt="">
+			<h2>
+				
+			</h2>
+			<p>
+				
+			</p>
+		</div>
+
+	<!-- Sam Smith -->
+		<div>
+			 <img src="" alt="">
+			 <img src="" alt="">
+			<h2>
+				
+			</h2>
+			<p>
+				
+			</p>
+		</div>
+
+	<!-- Taylor Swift -->
+
+		<div>
+			 <img src="" alt="">
+			 <img src="" alt="">
+			<h2>
+				
+			</h2>
+			<p>
+				
+			</p>
+		</div>
+
+</div>
+<!-- End of Grid -->
+</div>
+<!-- End of Container -->
 
 
  <!-- Displaying Purchase Drop -->
@@ -98,7 +163,24 @@
 
 
  <!-- Displaying Content Form -->
+		
+<div>
+		<div>
+		<?php the_title( '<h1>', '</h1>' ); ?>
+		</div>
 
-<?php the_title( '<h1>', '</h1>' ); ?>
+		<div>
+		<?php the_content(); ?>
+		</div>
+</div>
 
-<?php the_content(); ?>
+
+
+
+<!-- Footer -->
+
+
+
+
+
+

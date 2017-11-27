@@ -1,5 +1,6 @@
 // Styles for Homepage
 
+
 .image_wrapper{
 	position: relative; 
 
@@ -14,19 +15,99 @@
 }
 
 .spacer{
-
+	max-width: 1400px;
 }
 
-.title{
 
+// Start Displaying About, Team Blurb, and Download
+
+
+
+
+.title{
+	color: #95989A;
+	text-align: center;
+	    padding-top: 25px;
 }
 
 
 .content{
 	font-weight:400;
+	color: #95989A;
+	padding-bottom: 50px
+	// text-align: center;
+	 
+}
+
+@media screen and (min-width: 640px) 
+	{.content
+		{   
+		;
+	    padding-left: 150px;
+	    padding-right: 150px;
+		}
+	}
+
+
+// End Displaying About, Team Blurb, and Download
+
+.container {
+  margin: 0 auto;
+  padding: 24px;
+  max-width: 1500px;
 }
 
 .gradient{
-	background-color: red !important; 
-	
+	background-color: #D24E57;
+ 	background-image: url("gradient.png") !important;
+ 	color:white;	
 }
+
+// Responsive Grid for Step One & Three
+
+@media screen and (min-width: 640px) {
+  .grid {
+    display: grid;
+      grid-template-columns: 1fr 2fr;
+      grid-gap: 44px;
+
+  }
+}
+
+// Responsive Grid for Step Two
+@media screen and (min-width: 640px) {
+  .grid-two {
+    display: grid;
+      grid-template-columns: 2fr 1fr ;
+      grid-gap: 44px;
+      padding-left: 50px;
+  }
+}
+
+// Aligners
+.align-items-center {
+  align-items: center;
+}
+
+.align-self-center {
+  align-self: center;
+}
+
+
+// Step Two Text 
+.text-right{
+text-align: right;
+color: #95989A;
+}
+
+// Team Members
+@media screen and (min-width: 640px) {
+  .grid-three{
+    display: grid;
+      grid-template-columns: 1fr 2fr;
+      grid-gap: 44px;
+
+  }
+}
+
+
