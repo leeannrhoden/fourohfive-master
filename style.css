@@ -586,6 +586,10 @@ html {
   color: white;
 }
 
+.gradient-content {
+  padding-right: 50px;
+}
+
 @media screen and (min-width: 640px) {
   .grid {
     display: -ms-grid;

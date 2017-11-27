@@ -37,7 +37,7 @@
 			<h2>
 				<?php the_field('step_one_title') ?>
 			</h2>
-			<p>
+			<p class="gradient-content">
 				<?php the_field('step_one') ?>
 			</p>
 		</div>
@@ -72,7 +72,7 @@
 			<h2>
 				<?php the_field('step_three_title') ?>
 			</h2>
-			<p>
+			<p class="gradient-content">
 				<?php the_field('step_three') ?>
 			</p>
 		</div>
